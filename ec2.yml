@@ -25,14 +25,14 @@ Resources:
         - Key: "Env"
           Value: "Dev" 
 Outputs:
-  InstanceID:
+  Instance ID:
     Description: The Instance ID
     Value: !Ref MyEC2Instance
-  MyEC2InstancePublicIP:
+  My EC2Instance Public IP:
     Description: MyEC2Instance Public IP
     Value: !GetAtt MyEC2Instance.PublicIp
 
-  MyEC2InstancePrivateIP:
+  My EC2Instance Private IP:
     Description: MyEC2Instance Private IP
     Value: !GetAtt MyEC2Instance.PrivateIp
 
