@@ -32,6 +32,9 @@ Outputs:
     Description: MyEC2Instance Public IP
     Value: !GetAtt MyEC2Instance.PublicIp
 
+  MyEC2InstancePrivateIP:
+    Description: MyEC2Instance Private IP
+    Value: !GetAtt MyEC2Instance.PrivateIp
 
 
 
