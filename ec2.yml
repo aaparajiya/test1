@@ -1,4 +1,4 @@
-Resourece:
+Resources:
   MyEc2Instance:
     Type: AWS::EC2::Instance
     Properties:
