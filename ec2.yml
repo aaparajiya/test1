@@ -9,7 +9,7 @@ Resources:
         - Key: "name"
           Value: "mycfdemo1"
         - Key: "Env"
-          Value: "Dev"
+          Value: "Dev" 
 
 
 
