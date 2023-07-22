@@ -2,5 +2,13 @@ Resourece:
   MyEc2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId:
-      
+      ImageId: ""
+      KeyName: "NVKey"
+      InstanceType: "t2.micro"
+      Tags:
+        - Name: mycfdemo1
+        - Env: devops
+
+
+
+
