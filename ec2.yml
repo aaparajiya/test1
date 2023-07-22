@@ -1,10 +1,23 @@
+Parameters:
+  InstanceTypeParameter:
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - t2.small
+      - t2.medium
+    Description: Enter t2.micro, t2.small or t2.medium. Default is t2.micro
+  ImageName:
+    Type: String
+    Default: "ami-053b0d53c279acc90"
 Resources:
   MyEc2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: "ami-053b0d53c279acc90"
+      ImageId: 
+        Ref: ImageName
       KeyName: "NVKey"
-      InstanceType: "t2.micro"
+      InstanceType: InstanceTypeParameter
       Tags:
         - Key: "name"
           Value: "mycfdemo1"
