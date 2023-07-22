@@ -28,11 +28,10 @@ Outputs:
   InstanceID:
     Description: The Instance ID
     Value: !Ref MyEC2Instance
-  MyEC2InstancePublicIP:
+  MyEC2InstancePublicIPAddress:
     Description: MyEC2Instance Public IP
     Value: !GetAtt MyEC2Instance.PublicIp
-
-  MyEC2InstancePrivateIP:
+  MyEC2InstancePrivateIPAddress:
     Description: MyEC2Instance Private IP
     Value: !GetAtt MyEC2Instance.PrivateIp
 
