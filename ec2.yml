@@ -11,7 +11,7 @@ Parameters:
     Type: String
     Default: "ami-053b0d53c279acc90"
 Resources:
-  MyEc2Instance:
+  MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
       ImageId: 
@@ -24,6 +24,14 @@ Resources:
           Value: "mycfdemo1"
         - Key: "Env"
           Value: "Dev" 
+Outputs:
+  InstanceID:
+    Description: The Instance ID
+    Value: !Ref MyEC2Instance
+  MyEC2InstancePublicIP:
+    Description: MyEC2Instance Public IP
+    Value: !GetAtt MyEC2Instance.PublicIp
+
 
 
 
