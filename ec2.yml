@@ -17,7 +17,8 @@ Resources:
       ImageId: 
         Ref: ImageName
       KeyName: "NVKey"
-      InstanceType: InstanceTypeParameter
+      InstanceType: 
+        Ref: InstanceTypeParameter
       Tags:
         - Key: "name"
           Value: "mycfdemo1"
