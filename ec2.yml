@@ -1,4 +1,6 @@
 Resourece:
   MyEc2Instance:
     Type: AWS::EC2::Instance
-    
+    Properties:
+      ImageId:
+      
