@@ -6,8 +6,10 @@ Resources:
       KeyName: "NVKey"
       InstanceType: "t2.micro"
       Tags:
-        - Name: mycfdemo1
-        - Env: devops
+        - Key: "name"
+          Value: "mycfdemo1"
+        - Key: "Env"
+          Value: "Dev"
 
 
 
