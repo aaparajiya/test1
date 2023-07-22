@@ -2,7 +2,7 @@ Resourece:
   MyEc2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageId: ""
+      ImageId: "ami-0f5ee92e2d63afc18"
       KeyName: "NVKey"
       InstanceType: "t2.micro"
       Tags:
